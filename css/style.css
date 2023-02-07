@@ -1,0 +1,1452 @@
+@charset "UTF-8";
+@font-face {
+  font-family: Gotham-Bold;
+  src: url(../fonts/gotham_black.otf);
+}
+
+@font-face {
+  font-family: Gotham-Medium;
+  src: url(../fonts/gotham_book.otf);
+}
+
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+     ========================================================================== */
+/**
+   * Remove the margin in all browsers.
+   */
+body {
+  margin: 0;
+}
+
+/**
+   * Render the `main` element consistently in IE.
+   */
+main {
+  display: block;
+}
+
+/**
+   * Correct the font size and margin on `h1` elements within `section` and
+   * `article` contexts in Chrome, Firefox, and Safari.
+   */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+     ========================================================================== */
+/**
+   * 1. Add the correct box sizing in Firefox.
+   * 2. Show the overflow in Edge and IE.
+   */
+hr {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+     ========================================================================== */
+/**
+   * Remove the gray background on active links in IE 10.
+   */
+a {
+  background-color: transparent;
+}
+
+/**
+   * 1. Remove the bottom border in Chrome 57-
+   * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+   */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+   * Add the correct font weight in Chrome, Edge, and Safari.
+   */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+   * Add the correct font size in all browsers.
+   */
+small {
+  font-size: 80%;
+}
+
+/**
+   * Prevent `sub` and `sup` elements from affecting the line height in
+   * all browsers.
+   */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+     ========================================================================== */
+/**
+   * Remove the border on images inside links in IE 10.
+   */
+img {
+  border-style: none;
+}
+
+/* Forms
+     ========================================================================== */
+/**
+   * 1. Change the font styles in all browsers.
+   * 2. Remove the margin in Firefox and Safari.
+   */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+   * Show the overflow in IE.
+   * 1. Show the overflow in Edge.
+   */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+   * Remove the inheritance of text transform in Edge, Firefox, and IE.
+   * 1. Remove the inheritance of text transform in Firefox.
+   */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+   * Correct the inability to style clickable types in iOS and Safari.
+   */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+   * Remove the inner border and padding in Firefox.
+   */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+   * Restore the focus styles unset by the previous rule.
+   */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+   * Correct the padding in Firefox.
+   */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+   * 1. Correct the text wrapping in Edge and IE.
+   * 2. Correct the color inheritance from `fieldset` elements in IE.
+   * 3. Remove the padding so developers are not caught out when they zero out
+   *    `fieldset` elements in all browsers.
+   */
+legend {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+   * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+   */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+   * Remove the default vertical scrollbar in IE 10+.
+   */
+textarea {
+  overflow: auto;
+}
+
+/**
+   * 1. Add the correct box sizing in IE 10.
+   * 2. Remove the padding in IE 10.
+   */
+[type="checkbox"],
+[type="radio"] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+   * Correct the cursor style of increment and decrement buttons in Chrome.
+   */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+   * 1. Correct the odd appearance in Chrome and Safari.
+   * 2. Correct the outline style in Safari.
+   */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+   * Remove the inner padding in Chrome and Safari on macOS.
+   */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+   * 1. Correct the inability to style clickable types in iOS and Safari.
+   * 2. Change font properties to `inherit` in Safari.
+   */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+     ========================================================================== */
+/*
+   * Add the correct display in Edge, IE 10+, and Firefox.
+   */
+details {
+  display: block;
+}
+
+/*
+   * Add the correct display in all browsers.
+   */
+summary {
+  display: list-item;
+}
+
+/* Misc
+     ========================================================================== */
+/**
+   * Add the correct display in IE 10+.
+   */
+template {
+  display: none;
+}
+
+/**
+   * Add the correct display in IE 10.
+   */
+[hidden] {
+  display: none;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+  font-size: 16px;
+  background: #0A576C;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+h1, h2, h3 {
+  padding: 0;
+  margin: 0;
+  font-family: Gotham-Bold, serif;
+}
+
+button {
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1400px;
+  width: 100%;
+  margin: auto;
+}
+
+.button {
+  font-family: Gotham-Bold, serif;
+  text-transform: uppercase;
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+}
+
+.button--primary {
+  background: #FD902C;
+  color: #fff;
+}
+
+.button--secondary {
+  background: #fff;
+  color: #A6A6A6;
+  font-weight: bold;
+}
+
+.button:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+input {
+  border: none;
+}
+
+.title {
+  position: relative;
+  text-transform: uppercase;
+  font-size: 40px;
+  letter-spacing: 0.2em;
+  line-height: 140%;
+}
+
+.title::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -16px;
+  width: 100%;
+  height: 2px;
+  background: #FD902C;
+}
+
+.header-top {
+  padding: 13px 0;
+  border-bottom: 1px solid #A6A6A6;
+  position: relative;
+}
+
+.header-top__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header-top__phone {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.header-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-social__link {
+  height: 24px;
+  margin-right: 12px;
+}
+
+.header-social__link:last-of-type {
+  margin-right: 0;
+}
+
+.header-bottom {
+  padding: 11px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-logo {
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+}
+
+.header-logo:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.header-nav__item {
+  font-family: Gotham-Medium;
+  margin-right: 97px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.11em;
+}
+
+.header-nav__item:last-of-type {
+  margin-right: 0;
+}
+
+.header__button {
+  font-family: Gotham-Medium;
+  border-radius: 33px;
+  padding: 10px 36px;
+  line-height: 17px;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.header--contacts_page {
+  background: #0B2930;
+}
+
+.hero {
+  padding: 360px 0 210px;
+  margin-top: -175px;
+  background: url("../img/hero-bg.jpg") no-repeat center/cover;
+}
+
+.hero-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero__title {
+  font-size: 140px;
+  line-height: 168px;
+  letter-spacing: 0.38em;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.hero__subtitle {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.11em;
+  text-align: center;
+  margin-bottom: 170px;
+}
+
+.hero__subtitle--tours_page {
+  max-width: 875px;
+}
+
+.hero__button {
+  background: transparent;
+}
+
+.hero--tours_page {
+  background: url("../img/hero-bg--tours.jpg") no-repeat center/cover;
+}
+
+.hero--reviews_page {
+  background: url("../img/hero-bg--rewiews.jpg") no-repeat center/cover;
+}
+
+.hero--gallery_page {
+  background: url("../img/hero-bg--gallery.jpg") no-repeat center/cover;
+}
+
+.hero--abutus_page {
+  background: url("../img/hero-bg--abutus.jpg") no-repeat center/cover;
+}
+
+.about-us {
+  padding: 506px 0 234px;
+  margin-top: -250px;
+  background: url("../img/about-bg.png") no-repeat top/cover;
+}
+
+.about-us-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about-us__title {
+  max-width: 370px;
+  font-size: 32px;
+  margin-bottom: 60px;
+  text-transform: none;
+}
+
+.about-us__desc {
+  font-size: 24px;
+  font-weight: 400;
+  max-width: 565px;
+  color: #B4B4B4;
+  margin-bottom: 20px;
+}
+
+.about-us__desc:last-of-type {
+  margin-bottom: 60px;
+}
+
+.about-us__img {
+  border-radius: 24px;
+}
+
+.about-us__button {
+  font-size: 14px;
+  padding: 18px 98px;
+  border-radius: 26px;
+}
+
+.about {
+  padding: 506px 0 234px;
+  margin-top: -250px;
+  background: url("../img/tours-bg--tours.png") no-repeat top/cover;
+}
+
+.about-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.about__title {
+  font-size: 32px;
+  max-width: 140px;
+  margin-bottom: 76px;
+}
+
+.about__desc {
+  max-width: 565px;
+  font-size: 24px;
+  line-height: 140%;
+  color: #B4B4B4;
+}
+
+.map {
+  background: #0B2930 url("../img/map-bg.png") no-repeat top/cover;
+  padding: 220px 0;
+}
+
+.map-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.map-desc__title {
+  max-width: 240px;
+  font-size: 32px;
+  line-height: 38px;
+  margin-bottom: 70px;
+}
+
+.map-desc-group {
+  max-width: 375px;
+  margin-bottom: 32px;
+}
+
+.map-desc-group__title {
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: -0.02em;
+  color: #B8B8B8;
+}
+
+.map-desc-group__text {
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: -0.02em;
+  margin-top: 12px;
+}
+
+.map-desc-group__text--orange {
+  color: #FD902C;
+  cursor: pointer;
+}
+
+.map-desc-group__text--orange:hover {
+  text-decoration: underline;
+}
+
+.map-desc-group:nth-of-type(2) .map-desc-group__text:last-of-type {
+  margin-top: 8px;
+}
+
+.video-content {
+  height: 880px;
+  background: url("../img/video-bg.jpg") no-repeat center/cover;
+  position: relative;
+}
+
+.video-content::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(34, 38, 49, 0.4);
+}
+
+.video-content::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  width: 105px;
+  height: 105px;
+  background: url("../img/play-button.svg") no-repeat center;
+  cursor: pointer;
+}
+
+.reviews {
+  background: url("../img/tours-bg--tours.png") no-repeat top/cover;
+  padding-top: 400px;
+  margin-top: -300px;
+}
+
+.reviews-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.reviews__title {
+  margin-bottom: 76px;
+}
+
+.reviews-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.reviews-list__item {
+  max-width: 684px;
+  border-radius: 12px;
+  padding: 32px;
+  background: #187189;
+  margin-bottom: 32px;
+}
+
+.reviews-list__item:nth-of-type(2n-1) {
+  margin-right: 32px;
+}
+
+.reviews-item__name {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.reviews-item-rating {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+
+.reviews-item-rating__number {
+  margin-right: 4px;
+  font-size: 14px;
+  color: #AFAFAF;
+}
+
+.reviews-item__tour {
+  color: #B8B8B8;
+  margin-bottom: 20px;
+}
+
+.reviews-item__tour-name {
+  font-weight: bold;
+  color: #fff;
+}
+
+.reviews-item__text {
+  color: #B4B4B4;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.reviews-item__text--orange {
+  color: #FD902C;
+  cursor: pointer;
+}
+
+.reviews-item__text--orange:hover {
+  text-decoration: underline;
+}
+
+.reviews-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+
+.reviews-button__button {
+  padding: 18px 67px;
+  border-radius: 24px;
+}
+
+.reviews--abutus_page {
+  background: #0A576C url("../img/reviews-bg--abutus.png") no-repeat top/cover;
+  margin-top: -180px;
+}
+
+.tour {
+  padding: 240px 0 50px;
+  background: #3A5C33 url("../img/tours-img-top.jpg") no-repeat top/cover;
+}
+
+.tour-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.tour__title {
+  margin-bottom: 72px;
+}
+
+.tour-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 60px;
+}
+
+.tour-list__item {
+  background: #187189;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 445px;
+  border-radius: 12px;
+  margin-right: 37px;
+}
+
+.tour-list__item:last-of-type {
+  margin-right: 0;
+}
+
+.tour-item__img {
+  margin-bottom: 20px;
+  border-radius: 12px 12px 0 0;
+}
+
+.tour-item__title {
+  font-family: Gotham-Bold, serif;
+  font-size: 24px;
+  padding-left: 20px;
+}
+
+.tour-item-rating {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+
+.tour-item__button {
+  width: 100%;
+  margin-top: 20px;
+  border-radius: 24px;
+  padding: 14px 0;
+}
+
+.tour-desc {
+  padding: 12px 20px 20px 20px;
+}
+
+.tour-rating__number {
+  color: #AFAFAF;
+  font-size: 14px;
+  margin-right: 4px;
+}
+
+.tour-price__number {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.tour-price__day {
+  font-weight: normal;
+  color: #B8B8B8;
+  font-size: 14px;
+}
+
+.tour-about {
+  color: #B4B4B4;
+  font-size: 14px;
+}
+
+.tour__button {
+  padding: 18px 100px;
+  border-radius: 26px;
+}
+
+.tour--blue-bg {
+  background: url("../img/tours-bg--tours.png") no-repeat top/cover;
+  padding-top: 400px;
+  margin-top: -300px;
+}
+
+.gallery {
+  padding: 220px 0 240px 0;
+  background: #3A5C33 url("../img/gallery-bg.png") no-repeat top/cover;
+}
+
+.gallery img {
+  cursor: pointer;
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+}
+
+.gallery img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.gallery-сontent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.gallery__title {
+  margin-bottom: 76px;
+}
+
+.gallery__img {
+  border-radius: 20px;
+}
+
+.gallery-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 33px;
+}
+
+.gallery-list:last-of-type {
+  margin-bottom: 60px;
+}
+
+.gallery .col:first-of-type {
+  margin-right: 33px;
+}
+
+.gallery .col:first-of-type .col-part {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 32px;
+}
+
+.gallery .col:first-of-type .col-part .col-mini {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 32px;
+}
+
+.gallery .col:first-of-type .col-part .col-mini img:first-of-type {
+  margin-bottom: 33px;
+}
+
+.gallery .col:last-of-type .col-part {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 33px;
+}
+
+.gallery .col:last-of-type .col-part img:first-of-type {
+  margin-right: 33px;
+}
+
+.gallery__button {
+  padding: 18px 100px;
+  border-radius: 26px;
+}
+
+.gallery--blue-bg {
+  background: #0B2830 url("../img/gallery-bg--tours.png") no-repeat top/cover;
+  padding-top: 245px;
+  padding-bottom: 100px;
+  margin-top: -100px;
+}
+
+.gallery--gallery_page {
+  background: url("../img/gallery-bg--gallery.png") no-repeat top/cover;
+  margin-top: -215px;
+  padding-top: 350px;
+}
+
+.gallery--gallery_page .gallery-list:nth-of-type(2) .col:first-of-type .col-part {
+  margin-bottom: 0;
+  margin-top: 32px;
+}
+
+.gallery--gallery_page .gallery-list:nth-of-type(2) .col:first-of-type .col-part img:first-of-type {
+  margin-right: 32px;
+}
+
+.gallery--gallery_page .gallery-list:nth-of-type(2) .col:last-of-type .col-part {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.gallery--gallery_page .gallery-list:nth-of-type(2) .col:last-of-type .col-part img {
+  margin-right: 0;
+}
+
+.gallery--gallery_page .gallery-list:nth-of-type(2) .col:last-of-type .col-mini img {
+  margin-right: 0;
+}
+
+.gallery--gallery_page .gallery-list:nth-of-type(2) .col:last-of-type .col-mini img:first-of-type {
+  margin-bottom: 32px;
+}
+
+.gallery--gallery_page .gallery-list:nth-of-type(3) .col:first-of-type img {
+  margin-bottom: 32px;
+}
+
+.gallery--gallery_page .gallery-list:nth-of-type(3) .col:first-of-type .col-mini {
+  margin-left: 0;
+  margin-right: 32px;
+}
+
+.team {
+  padding: 448px 0 190px;
+  margin-top: -235px;
+  background: #142011 url("../img/auth-bg.png") no-repeat top/cover;
+  position: relative;
+}
+
+.team-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.team__title {
+  margin-bottom: 60px;
+}
+
+.team-list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.team-item__img {
+  border-radius: 24px;
+  margin-right: 151px;
+}
+
+.team-item-desc {
+  max-width: 565px;
+}
+
+.team-item-desc__name {
+  font-size: 32px;
+  margin-bottom: 32px;
+}
+
+.team-item-desc__about {
+  color: #B4B4B4;
+  font-size: 24px;
+}
+
+.team-item-desc__about:first-of-type {
+  margin-bottom: 20px;
+}
+
+.team-slider__arrow {
+  position: absolute;
+  top: 60%;
+  right: 5%;
+  width: 44px;
+  height: 44px;
+  background: url("../img/arrow-right.svg") no-repeat center;
+  cursor: pointer;
+}
+
+.our-team {
+  padding: 400px 0 20px;
+  margin-top: -340px;
+  background: #0B2830 url("../img/gallery-bg--tours.png") no-repeat top/cover;
+}
+
+.our-team-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.our-team__title {
+  margin-bottom: 76px;
+}
+
+.our-team-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.our-team-list__item {
+  background: #187189;
+  border-radius: 24px;
+  margin-right: 32px;
+}
+
+.our-team-list__item:last-of-type {
+  margin-right: 0;
+}
+
+.our-team-item__img {
+  width: 445px;
+  height: 361px;
+  border-radius: 24px 24px 0 0;
+}
+
+.our-team-item-desc {
+  padding: 20px;
+}
+
+.our-team-item-desc__name {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 24px;
+  margin-bottom: 20px;
+}
+
+.our-team-item-desc__time {
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: -0.02em;
+  color: #B8B8B8;
+  margin-bottom: 32px;
+}
+
+.our-team-item-desc__time-number {
+  font-size: 18px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.our-team-item-rating {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+
+.our-team-item-rating__number {
+  margin-right: 4px;
+  letter-spacing: -0.02em;
+  color: #AFAFAF;
+}
+
+.our-team-item__button {
+  padding: 14px 0;
+  width: 100%;
+  border-radius: 24px;
+}
+
+.form {
+  padding: 0 0 130px;
+  background: #3A5C33;
+}
+
+.form__title {
+  font-size: 40px;
+  line-height: 140%;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin-bottom: 60px;
+}
+
+.form-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.form-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.form-group__label {
+  font-size: 24px;
+  line-height: 29px;
+  margin-bottom: 8px;
+}
+
+.form-group__input {
+  background: #2C3242;
+  border-radius: 30px;
+  color: #B4B4B4;
+  font-size: 20px;
+  padding: 18px 0;
+  text-indent: 24px;
+  width: 445px;
+}
+
+.form__button {
+  padding: 22px 177px;
+  border-radius: 30px;
+}
+
+.form-confidence {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-top: 8px;
+}
+
+.form-confidence__text {
+  max-width: 445px;
+  font-size: 12px;
+}
+
+.form-confidence__link {
+  color: #FD902C;
+  -webkit-transition: -webkit-text-decoration .3s;
+  transition: -webkit-text-decoration .3s;
+  transition: text-decoration .3s;
+  transition: text-decoration .3s, -webkit-text-decoration .3s;
+}
+
+.form-confidence__link:hover {
+  text-decoration: underline;
+}
+
+.form--green-bg {
+  padding-top: 175px;
+  background: url("../img/gallery-bg.png") no-repeat -1px top/cover;
+}
+
+.form--gallery_page {
+  background: url("../img/footer-bg--gallery.png") no-repeat top/cover;
+}
+
+.form--abutus_page {
+  background: #3A5C33 url("../img/footer-bg--abutus.png") no-repeat top/cover;
+  padding-top: 350px;
+  margin-top: -80px;
+}
+
+.form--contacts_page {
+  background: url("../img/form-bg--contacts.png") no-repeat -1px top/cover;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.footer {
+  padding: 50px 0 40px;
+  background: #3A5C33;
+  border-top: 1px solid #7D88A5;
+}
+
+.footer-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer-nav .col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer-nav .col:last-of-type {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.footer-nav .col:nth-of-type(4) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-nav__item {
+  margin-bottom: 33px;
+}
+
+.footer-nav__item:last-of-type {
+  margin-bottom: 24px;
+}
+
+.footer-nav__item:nth-of-type(2n) {
+  margin-bottom: 0;
+}
+
+.footer__phone {
+  margin-right: 40px;
+}
+
+.footer--green-bg {
+  background: #142011;
+}
+/*# sourceMappingURL=style.css.map */
